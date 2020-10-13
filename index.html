@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- <link id="active_style" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="static/css/styles.css">
+	<!-- BOOTSTRAP THEMES -->
+	<title>Bootstrap Learning</title>
+</head>
+
+<body>
+
+	<h2 style="margin: 30px 0; padding: 10px;">Jumbotrons outside of main and container divs</h2>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Smokey Bacon</h1>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+				praesentium
+				saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit consequatur
+				id eum.</p>
+		</div>
+	</div>
+
+	<h2 style="margin: 30px 0; padding: 10px;">Outside main and container divs</h2>
+
+	<!-- The Nav from Lesson 17 above the div body (looking at the expansion) -->
+
+	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a class="nav-link active" href="">Ninja Training</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Wizard Training</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Physic Training</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Coding Training</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
+
+		<h2>In main div but outside main container div</h2>
+
+		<!-- The Nav from Lesson 17 above the main container -->
+
+		<nav class="navbar navbar-expand-sm navbar-light bg-light">
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link active" href="">Ninja Training</a></li>
+					<li class="nav-item"><a class="nav-link" href="">Wizard Training</a></li>
+					<li class="nav-item"><a class="nav-link" href="">Physic Training</a></li>
+					<li class="nav-item"><a class="nav-link" href="">Coding Training</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-fluid">
+
+			<h2>Containers, Rows, Columns</h2>
+
+			<div class="row" style="margin-top: 20px">
+
+				<div class="col-md-4 col-lg-6 thumb">thumbnail</div>
+				<div class="col-md-4 col-lg-6 thumb">thumbnail</div>
+				<div class="col-md-4 col-lg-6 thumb">thumbnail</div>
+				<div class="col-md-4 col-lg-6 thumb">thumbnail</div>
+				<div class="col-md-4 col-lg-6 thumb">thumbnail</div>
+				<div class="col-md-4 col-lg-6 thumb">thumbnail</div>
+
+			</div>
+
+			<h2>Column Offseting</h2>
+
+			<div class="row" style="margin-top: 20px">
+
+				<div class="col-xs-offset-2 col-xs-8 col-md-4 col-md-offset-0 thumb">thumbnail</div>
+				<div class="col-xs-12 col-md-4 thumb">thumbnail</div>
+				<div class="col-xs-12 col-md-4 thumb">thumbnail</div>
+
+			</div>
+
+			<h2>Push & Pull</h2>
+
+			<div class="row" style="margin-top: 20px">
+
+				<div class="col-xs-12 col-md-6 col-md-push-6 col-lg-8 col-lg-push-0 thumb">Content bar</div>
+				<div class="col-xs-12 col-md-6 col-md-pull-6 col-lg-4 col-lg-pull-0 thumb">Sidebar area</div>
+
+			</div>
+
+			<h2>ClearFix</h2>
+
+			<!-- Done in  the styles.css (clear: both) -->
+
+			<h2>Text Styles - class h1, class lead</h2>
+
+			<h2>List Styles</h2>
+
+			<div class="row" style="margin-top: 20px">
+
+				<!-- .list-inline now requires that its children list items have the new .list-inline-item class applied to them. -->
+
+				<ul class="list-inline">
+					<li class="list-inline-item">Ham</li>
+					<li class="list-inline-item">Sausage</li>
+					<li class="list-inline-item">Spicy Chicken</li>
+					<li class="list-inline-item">Quorn</li>
+				</ul>
+
+
+			</div>
+
+			<div class="row" style="margin-top: 20px">
+
+				<!-- .list-inline now requires that its children list items have the new .list-inline-item class applied to them. -->
+
+				<ol class="list-inline">
+					<li class="list-inline-item">Monkey</li>
+					<li class="list-inline-item">Panther</li>
+					<li class="list-inline-item">Meerkat</li>
+				</ol>
+
+
+			</div>
+
+			<!-- .dl-horizontal has been dropped. Instead, use .row on <dl> and use grid column classes (or mixins) on its <dt> and <dd> children. -->
+
+			<dl class="row">
+
+				<dt>Ninja</dt>
+				<dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quas accusantium architecto dolorem, illo
+					eaque eveniet consequatur ex in adipisci, quis nulla corporis ipsam necessitatibus, odio officia iusto rerum
+					cumque!
+				</dd>
+
+				<dt>Ninja</dt>
+				<dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quas accusantium architecto dolorem, illo
+					eaque eveniet consequatur ex in adipisci, quis nulla corporis ipsam necessitatibus, odio officia iusto rerum
+					cumque!
+				</dd>
+
+				<dt>Ninja</dt>
+				<dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quas accusantium architecto dolorem, illo
+					eaque eveniet consequatur ex in adipisci, quis nulla corporis ipsam necessitatibus, odio officia iusto rerum
+					cumque!
+				</dd>
+
+				<dt>Ninja</dt>
+				<dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quas accusantium architecto dolorem, illo
+					eaque eveniet consequatur ex in adipisci, quis nulla corporis ipsam necessitatibus, odio officia iusto rerum
+					cumque!
+				</dd>
+
+			</dl>
+
+			<h2>Button Styles</h2>
+
+			<!-- 
+				Migrating to v4 
+				-Buttons
+							1) Renamed .btn-default to .btn-secondary.
+							2) Dropped the .btn-xs class entirely as .btn-sm is proportionally much smaller than v3’s.
+						-->
+
+
+			<div class="row" style="margin-top: 20px">
+
+				<div class="col-xs-12">
+					<h1>Button Styles (no classes added)</h1>
+					<a href="#">Anchor tag</a>
+					<button>Button tag</button>
+					<input type="button" value="Submit">
+				</div>
+
+				<div class="col-xs-12">
+					<h1>The btn Class</h1>
+					<a href="#" class="btn btn-secondary">Anchor tag</a>
+					<button class="btn btn-secondary">Button tag</button>
+					<input class="btn btn-secondary" type="button" value="Submit">
+				</div>
+
+				<div class="col-xs-12">
+					<h1>Contextual Classes</h1>
+					<a href="#" class="btn btn-secondary">default (secondary v.4)</a>
+					<a href="#" class="btn btn-primary">primary</a>
+					<a href="#" class="btn btn-info">info</a>
+					<a href="#" class="btn btn-warning">warning</a>
+					<a href="#" class="btn btn-danger">danger</a>
+					<a href="#" class="btn btn-success">danger</a>
+				</div>
+
+				<div class="col-xs-12">
+					<h1>Size Classes</h1>
+					<!-- only small, no extra small anymore -->
+					<a href="#" class="btn btn-secondary btn-sm">extra small (now btn-sm only)</a>
+					<button class="btn btn-secondary btn-sm">small (sm)</button>
+					<input type="submit" value="large (lg)" class="btn btn-info btn-lg"></input>
+				</div>
+
+				<div class="col-xs-12">
+					<h1>Active & Disabled Classes</h1>
+					<a href="#" class="btn btn-secondary active">active</a>
+					<a href="#" class="btn btn-secondary disabled">disabled</a>
+					<a href="#" class="btn btn-primary active">active</a>
+					<a href="#" class="btn btn-primary disabled">disabled</a>
+					<button class="btn btn-secondary" disabled="disabled">Button</button>
+				</div>
+
+			</div>
+
+			<h2>Image Styles</h2>
+
+			<!-- 
+				*-Renamed-.img-responsive - now is - img-fluid
+				*-Renamed-.img-rounded to .rounded
+				*-Renamed-.img-circle to .rounded-circle
+				*-Renamed-.center-block is now mx-auto, representing margin: 0 auto;
+				*-Renamed-.d-block representing display:block, for centering elements
+			 -->
+
+			<div class="row" style="margin-top: 20px;">
+				<div class="col-xs-12 col-sm-3 img-test">
+					<img src="/static/images/JCookStuffLogo3.png" class="img-fluid rounded-circle img-thumbnail d-block"
+						alt="J Cooks Stuff Logo">
+				</div>
+				<div class="col-xs-12 col-sm-3 img-test">
+					<img src="/static/images/JCookStuffLogo3.png" class="img-fluid rounded d-block" alt="J Cooks Stuff Logo">
+				</div>
+				<div class="col-xs-12 col-sm-3 img-test">
+					<img src="/static/images/JCookStuffLogo3.png" class="img-fluid img-thumbnail d-block"
+						alt="J Cooks Stuff Logo">
+				</div>
+				<div class="col-xs-12 col-sm-3 img-test">
+					<img src="/static/images/JCookStuffLogo3.png" class="img-fluid d-block" alt="J Cooks Stuff Logo">
+				</div>
+			</div>
+
+			<h2>Visibility</h2>
+
+			<!-- 
+				! hidden & show classes--depricated 
+				Rather than using explicit .visible-* classes, you make an element visible by simply not hiding it at that screen size. 
+				You can combine one .d-*-none class with one .d-*-block class to show an element only on a given interval of screen sizes 
+				(e.g. .d-none.d-md-block.d-xl-none shows the element only on medium and large devices).
+			 -->
+
+			<div class="row" style="margin-top: 20px;">
+				<div class="col-xs-12 col-sm-3 d-none d-sm-block">
+					<img src="/static/images/JCookStuffLogo3.png" class="img-fluid" alt="J Cooks Stuff Logo">
+				</div>
+				<div class="col-xs-12 col-sm-3 img-test">
+					<img src="/static/images/JCookStuffLogo3.png" class="img-fluid" alt="J Cooks Stuff Logo">
+				</div>
+				<div class="col-xs-12 col-sm-3 img-test">
+					<img src="/static/images/JCookStuffLogo3.png" class="img-fluid" alt="J Cooks Stuff Logo">
+				</div>
+				<div class="col-xs-12 col-sm-3 img-test">
+					<img src="/static/images/JCookStuffLogo3.png" class="img-fluid" alt="J Cooks Stuff Logo">
+				</div>
+			</div>
+
+			<!-- * we must be aware when using inline elements (width)-->
+
+			<h2>Drop-down Menu's</h2>
+
+			<!-- 
+				* Dropdown toggles no longer require an explicit <span class="caret"></span>; this is now provided automatically via CSS’s ::after on .dropdown-toggle.
+				* Renamed .divider to .dropdown-divider.
+				* Dropdown items now require .dropdown-item.
+			 -->
+
+			<div class="dropdown">
+
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Meats</button>
+
+				<div class="dropdown-menu">
+					<a class="dropdown-header">Meaty</a>
+					<a href="" class="dropdown-item">Ham</a>
+					<a href="" class="dropdown-item disabled">Sausage</a>
+					<a href="" class="dropdown-item">Spicy Chicken</a>
+					<a href="" class="dropdown-item">Salami</a>
+					<a class="dropdown-header">Veggie</a>
+					<a href="" class="dropdown-item">Quorn</a>
+					<a href="" class="dropdown-item">Tofu</a>
+				</div>
+
+			</div>
+
+			<h2>Tabs & Pills (navigation)</h2>
+
+			<!--
+				Can't find "nav-stacked" 
+				!Removed .btn-group-justified. As a replacement you can use <div class="btn-group d-flex" role="group"></div> as a wrapper around elements with .w-100.
+				*nav-justified is now d-flex
+			-->
+
+
+			<div class="row">
+				<!-- <ul class="nav nav-tabs"> -->
+				<ul class="nav nav-tabs d-flex">
+					<li class="nav-item"><a class="nav-link active" href="">Ninja Training</a></li>
+					<li class="nav-item"><a class="nav-link" href="">Wizard Training</a></li>
+					<li class="nav-item"><a class="nav-link" href="">Physic Training</a></li>
+					<li class="nav-item"><a class="nav-link" href="">Coding Training</a></li>
+				</ul>
+			</div>
+
+			<h2>TEST</h2>
+
+
+			<h2>#17 Navbars</h2>
+
+			<!-- 
+				* The navbar is good to be above the container div
+				* Responsive navbar behaviors are now applied to the .navbar class via the required .navbar-expand-{breakpoint} where you choose where to collapse the navbar. Previously this was a Less variable modification and required recompiling.
+				* .navbar-default is now .navbar-light, though .navbar-dark remains the same. One of these is required on each navbar. However, these classes no longer set background-colors; instead they essentially only affect color.
+				* Navbars now require a background declaration of some kind. Choose from our background utilities (.bg-*) or set your own with the light/inverse classes
+			-->
+
+			<nav class="navbar navbar-expand-sm navbar-light bg-light navbar-fixed-top">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<li class="nav-item"><a class="nav-link active" href="">Ninja Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Wizard Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Physic Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Coding Training</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<h2>More Navbar Classes</h2>
+
+			<!-- 
+				used .ml-auto (margin-left) to sent the login and register buttons to the right 
+			-->
+
+			<nav class="navbar navbar-expand-sm navbar-light bg-light">
+				<!-- <div class="container"> -->
+				<div class="navbar-header">
+					<a href="/index.html" class="navbar-brand">Hello</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a class="nav-link active" href="">Ninja Training</a></li>
+					<li class="nav-item"><a class="nav-link" href="">Wizard Training</a></li>
+					<li class="nav-item"><a class="nav-link" href="">Physic Training</a></li>
+					<li class="nav-item"><a class="nav-link" href="">Coding Training</a></li>
+				</ul>
+				<ul class="nav navbar-nav ml-auto">
+					<li class="nav-item"><a href="#" class="btn btn-primary navbar-btn">Login</a></li>
+					<li class="nav-item"><a href="#" class="btn btn-secondary navbar-btn">Register</a>
+					</li>
+				</ul>
+				<!-- </div> -->
+			</nav>
+
+			<h2>Mobile Navbars</h2>
+
+			<!-- 
+				
+			-->
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<!-- <div class="container"> -->
+				<div class="navbar-header">
+					<a href="/index.html" class="navbar-brand">Hello</a>
+				</div>
+				<div class="navbar ml-auto">
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#myDropdown">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="myDropdown">
+
+					<ul class="nav navbar-nav">
+						<li class="nav-item"><a class="nav-link active" href="">Ninja Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Wizard Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Physic Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Coding Training</a></li>
+					</ul>
+					<ul class="nav navbar-nav ml-auto">
+						<li class="nav-item"><a href="#" class="btn btn-primary navbar-btn">Login</a></li>
+						<li class="nav-item"><a href="#" class="btn btn-secondary navbar-btn">Register</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- </div> -->
+			</nav>
+
+			<h2>Jumbotrons</h2>
+
+			<!-- 
+				From what I saw, jumbotrons are now automatically stylized
+			-->
+
+			<div class="row">
+				<div class="content col-sm-12">
+					<div class="jumbotron">
+						<h1>Smokey Bacon</h1>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+							praesentium
+							saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit consequatur
+							id eum.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="content col-sm-6 col-md-3">
+					<h1>Ninja</h1>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a praesentium
+						saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit consequatur
+						id eum.</p>
+				</div>
+				<div class="content col-sm-6 col-md-3">
+					<h1>Wizard</h1>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a praesentium
+						saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit consequatur
+						id eum.</p>
+				</div>
+				<div class="content col-sm-6 col-md-3">
+					<h1>Psychic</h1>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a praesentium
+						saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit consequatur
+						id eum.</p>
+				</div>
+				<div class="content col-sm-6 col-md-3">
+					<h1>Coding</h1>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a praesentium
+						saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit consequatur
+						id eum.</p>
+				</div>
+			</div>
+
+			<h2>Styling Forms</h2>
+
+			<!-- 
+				! Dropped .radio-inline and .checkbox-inline.
+
+			-->
+
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Get in Touch</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odit autem iste eveniet velit, reiciendis
+						nam explicabo maxime adipisci architecto ut tenetur labore voluptatibus nulla asperiores dignissimos! Hic,
+						ipsam nostrum?</p>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea perferendis deleniti beatae. Reprehenderit
+						eaque molestiae quis minima laboriosam impedit voluptatem!</p>
+				</div>
+				<div class="col-sm-6">
+					<form action="">
+						<div class="form-group">
+							<label for="name" class="sr-only">Name</label>
+							<input class="form-control" type="text" id="name" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<label for="email" class="sr-only">Email</label>
+							<input class="form-control" type="text" id="email" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label>
+								<input type="checkbox">
+								Ninja Training
+							</label>
+							<label>
+								<input type="checkbox">
+								Wizard Training
+							</label>
+						</div>
+						<div class="form-group">
+							<label>
+								<input type="radio" name="gender">
+								Male
+							</label>
+							<label>
+								<input type="radio" name="gender">
+								Female
+							</label>
+						</div>
+						<input type="button" value="Send" class="btn btn-primary">
+					</form>
+				</div>
+			</div>
+
+			<h2>Badges & Labels</h2>
+
+			<!-- 
+				Consolidated .label and .badge to disambiguate from the <label> element and simplify related components.
+			-->
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<!-- <div class="container"> -->
+				<div class="navbar-header">
+					<a href="/index.html" class="navbar-brand">Hello</a>
+				</div>
+				<div class="navbar ml-auto">
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#myDropdown">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="myDropdown">
+
+					<ul class="nav navbar-nav">
+						<li class="nav-item"><a class="nav-link active" href="">Ninja Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Wizard Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Physic Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Coding Training</a></li>
+					</ul>
+
+					<div class="nav navbar-nav ml-auto">
+						<button class="btn btn-primary navbar-btn">
+							Notifications <span class="badge badge-pill badge-danger">20</span>
+						</button>
+						<button class="btn btn-primary navbar-btn" style="margin-left:4px">
+							Inbox <span class="badge badge-danger">NEW</span>
+						</button>
+					</div>
+					<!-- <ul class="nav navbar-nav ml-auto">
+						<li class="nav-item"><a href="#" class="btn btn-primary navbar-btn">Login</a></li>
+						<li class="nav-item"><a href="#" class="btn btn-secondary navbar-btn">Register</a></li>
+					</ul> -->
+
+				</div>
+				<!-- </div> -->
+			</nav>
+
+			<h2>Panels</h2>
+
+			<div class="row">
+				<div class="content col-sm-6 col-md-3">
+					<div class="card border-primary">
+						<div class="card-header">
+							<h1 class="card-title">Ninja</h1>
+						</div>
+						<div class="card-body">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+								praesentium
+								saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit
+								consequatur
+								id eum.</p>
+						</div>
+						<div class="card-footer">
+							<p>JJ INC&copy;</p>
+						</div>
+					</div>
+				</div>
+				<div class="content col-sm-6 col-md-3">
+					<div class="card border-danger">
+						<div class="card-header">
+							<h1 class="card-title">Ninja</h1>
+						</div>
+						<div class="card-body">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+								praesentium
+								saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit
+								consequatur
+								id eum.</p>
+						</div>
+						<div class="card-footer">
+							<p>JJ INC&copy;</p>
+						</div>
+					</div>
+				</div>
+				<div class="content col-sm-6 col-md-3">
+					<div class="card border-secondary">
+						<div class="card-header">
+							<h1 class="card-title">Ninja</h1>
+						</div>
+						<div class="card-body">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+								praesentium
+								saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit
+								consequatur
+								id eum.</p>
+						</div>
+						<div class="card-footer">
+							<p>JJ INC&copy;</p>
+						</div>
+					</div>
+				</div>
+				<div class="content col-sm-6 col-md-3">
+					<div class="card border-success">
+						<div class="card-header">
+							<h1 class="card-title">Ninja</h1>
+						</div>
+						<div class="card-body">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+								praesentium
+								saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit
+								consequatur
+								id eum.</p>
+						</div>
+						<div class="card-footer">
+							<p>JJ INC&copy;</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2>Tooltips</h2>
+
+			<div class="row">
+
+				<div class="content col-sm-6 col-md-12">
+					<div class="card border-primary">
+						<div class="card-header">
+							<h1 class="card-title">Ninja</h1>
+						</div>
+						<div class="card-body">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+								praesentium
+								saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit
+								consequatur
+								id eum.</p>
+						</div>
+						<div class="card-footer">
+							<p data-toggle="tooltip" data-placement="top" title="Becoming a good dev">JJ INC&copy;</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2>Carousels</h2>
+
+			<!-- 
+			.item -> .carousel-item
+
+		-->
+
+			<div class="carousel slide" id="myslider" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myslider" data-slide-to="0" class="active"></li>
+					<li data-target="#myslider" data-slide-to="1"></li>
+					<li data-target="#myslider" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="/static/images/JCookStuffLogo3.png" alt="">
+						<div class="carousel-caption">
+							<h2>Yo Ninjas, let's kick some coding ass!</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="/static/images/JCookStuffLogo.png" alt="">
+						<div class="carousel-caption">
+							<h2>Yo Ninjas, let's kick some coding ass!</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="/static/images/JCookStuffLogo3.png" alt="">
+						<div class="carousel-caption">
+							<h2>Yo Ninjas, let's kick some coding ass!</h2>
+						</div>
+					</div>
+				</div>
+
+				<a href="#myslider" class="carousel-control-prev" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a href="#myslider" class="carousel-control-next" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+			<h2>Modals</h2>
+
+			<!-- MODAL POPUP -->
+
+			<div class="modal" id="mymodal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2 class="modal-title">How to be a badass ninja!</h2>
+							<button class="close" type="button" data-dismiss="modal">X</button>
+						</div>
+						<div class="modal-body">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident error itaque cupiditate
+								quam, nobis quae. Molestiae natus, inventore laborum cumque reprehenderit beatae perferendis mollitia
+								accusantium aliquam dolore enim sunt reiciendis animi non esse harum unde. Explicabo aspernatur iste
+								laboriosam laudantium asperiores, eaque veritatis nemo possimus nam consequatur alias blanditiis!</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quisquam voluptate quae nihil molestias
+								excepturi rerum dignissimos sapiente inventore id, expedita dolorem, molestiae fuga ducimus vel natus,
+								est quaerat odit?</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus repellendus accusantium incidunt
+								temporibus ut quas tenetur? Repellendus, explicabo quia?</p>
+						</div>
+					</div> <!-- END .modal-content -->
+				</div> <!-- END .modal-dialog -->
+			</div> <!-- END .modal -->
+
+			<!-- END MODAL -->
+
+			<div class="row">
+
+				<div class="content col-sm-6 col-md-12">
+					<div class="card border-primary">
+						<div class="card-header">
+							<h1 class="card-title">Ninja</h1>
+						</div>
+						<div class="card-body">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+								praesentium
+								saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit
+								consequatur
+								id eum.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" data-toggle="modal" data-target="#mymodal">
+								More info...
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2>Accordions</h2>
+
+			<div class="accordion" id="myaccordian">
+				<div class="card border-primary">
+					<div class="card-header" id="headingOne">
+						<h3 data-toggle="collapse" data-target="#card-1">Ninja Warrior</h3>
+					</div>
+					<div class="collapse" class="collapse show" id="card-1" data-parent="#myaccordian">
+						<div class="card-body">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+								praesentium
+								saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit
+								consequatur
+								id eum.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" data-toggle="modal" data-target="#mymodal">
+								More info...
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card border-secondary">
+					<div class="card-header" id="headingOne">
+						<h3 data-toggle="collapse" data-target="#card-2">Ninja Warrior</h3>
+					</div>
+					<div class="collapse" class="collapse show" id="card-2" data-parent="#myaccordian">
+						<div class="card-body">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+								praesentium
+								saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit
+								consequatur
+								id eum.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" data-toggle="modal" data-target="#mymodal">
+								More info...
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card border-danger">
+					<div class="card-header" id="headingOne">
+						<h3 data-toggle="collapse" data-target="#card-3">Ninja Warrior</h3>
+					</div>
+					<div class="collapse" class="collapse show" id="card-3" data-parent="#myaccordian">
+						<div class="card-body">
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam corrupti ea tempore, a
+								praesentium
+								saepe aliquid. Minima, labore suscipit dignissimos ad placeat aspernatur dolore voluptas, odit
+								consequatur
+								id eum.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" data-toggle="modal" data-target="#mymodal">
+								More info...
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="/index.js"></script>
+</body>
+
+</html>
